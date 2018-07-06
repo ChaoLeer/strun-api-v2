@@ -1,0 +1,8 @@
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'HTML', 'HTML', '文章类别--HTML');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'PHP', 'PHP', '文章类别--PHP');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'JS', 'JS', '文章类别--JS');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'CSS', 'CSS', '文章类别--CSS');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'Vue', 'Vue', '文章类别--Vue');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'Weex', 'Weex', '文章类别--Weex');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'Linux', 'Linux', '文章类别--Linux');
+INSERT INTO `qdm169152214_db`.`strun_code_type` (`ID`, `CODE_TYPE`, `CODE_KEY`, `CODE_LABLE`, `REMARK`) VALUES (replace(uuid(),'-',''), 'ARTICLE_TYPE', 'React', 'React', '文章类别--React');
