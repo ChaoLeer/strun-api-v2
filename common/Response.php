@@ -40,6 +40,12 @@
         $response = $this->encodeJson($responseData);
         echo $response;
     }
+    // 返回单条数据
+    public function responseSingleData ($rawData = array(), $notFoundRes) {
+        $responseData = $this->resultSingleData($rawData, $notFoundRes);
+        $response = $this->encodeJson($responseData);
+        exit($response);
+    }
     // 返回数据
     public function responseDatas ($rawData = array(), $notFoundRes) {
         $responseData = $this->resultDatas($rawData, $notFoundRes);

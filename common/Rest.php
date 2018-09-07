@@ -67,7 +67,24 @@ class Rest {
             505 => 'HTTP Version Not Supported');
         return ($httpStatus[$statusCode]) ? $httpStatus[$statusCode] : $status[500];
     }
-    
+    // 返回单挑数据
+    public function resultSingleData($rawData, $notFoundRes) {
+        // print_r($rawData);
+        // print_r($rawData);
+      if (empty($rawData)) {
+            $statusCode = 417;
+            $resData = $notFoundRes;
+        } else {
+            $statusCode = 200;
+            $resData = $this->transformResponseData($rawData);
+            $resData = $resData[0];
+        }
+        // $requestContentType = $_SERVER['HTTP_ACCEPT'];
+        $requestContentType = 'application/json;charset=UTF-8';
+        $this->setHttpHeaders($requestContentType, $statusCode);
+        return $resData;
+    }
+
     public function resultDatas($rawData, $notFoundRes) {
         // print_r($rawData);
         // print_r($rawData);
