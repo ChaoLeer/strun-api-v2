@@ -4,6 +4,7 @@ RewriteEngine on
 RewriteRule ^article/page article/index.php?redict=page&%{QUERY_STRING} [nc,qsa]
 RewriteRule ^article/([0-9a-z]{32}) article/index.php?redict=id&id=$1 [nc,qsa]
 RewriteRule ^code/type/([A-Z_]{1,}) code/index.php?redict=type&type=$1 [nc,qsa]
+RewriteRule ^user user/index.php [nc,qsa]
 # RewriteRule ^a /index.php [nc,qsa]
 #RewriteRule ^code/$   index.php?view=all [nc,qsa]
 #/type/(^[A-Z_]{1,}$)
