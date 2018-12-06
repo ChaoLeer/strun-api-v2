@@ -50,8 +50,8 @@ switch ($method) {
       $authorId = $utils -> getParams('authorId', '');
       $title = $utils -> getParams('title', '');
       $author = $utils -> getParams('author', '');
-      $articleintro = $utils -> getParams('articleintro', '');
-      $content = $utils -> getParams('content', '');
+      $articleintro = $utils -> getParams('articleintro', '', true);
+      $content = $utils -> getParams('content', '', true);
       $classify = $utils -> getParams('classify', '');
       if (empty($authorId)) {
         $response->responseExeption('缺少参数authorId');

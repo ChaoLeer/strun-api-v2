@@ -45,7 +45,13 @@
     }
     // chmod($uploadPath, 0666);
     if(file_exists($uploadPath.$userId.'/'.$file['name'])){
-      $result = array('code' => 417, 'msg' => '文件已经存在！', 'userId' => $userId );
+      $img_url = $uploadPath.$userId.'/'.$file['name'];
+      $result = array(
+        'code' => 0,
+        'msg' => '文件已经存在！',
+        'userId' => $userId,
+        'url' =>  'https://'.$_SERVER['HTTP_HOST'].$sourcePath.$img_url
+      );
       // $msg = $file['name'] . "文件已经存在！";
       exit(json_encode($result));
     } else {
@@ -56,7 +62,7 @@
         // 跳转
         // header("location:{$url}");
         $result = array(
-          'code' => 0,
+          'code' => 200,
           'msg' => '上传成功', 
           // 'server' => $_SERVER, 
           'url' =>  'http://'.$_SERVER['HTTP_HOST'].$sourcePath.$img_url,
